@@ -112,7 +112,7 @@ namespace Tp1_Sabarino
             if (operation == '/' && number2.Numero == "0")
             {
                 operationMemory.Clear();
-                operationMemory.Append("{0} / 0 = Syntax Error");
+                operationMemory.AppendFormat("{0} / 0 = Syntax Error",number1.Numero);
                 lbl_result.Text = "Syntax Error";
             }
 

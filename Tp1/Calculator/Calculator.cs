@@ -132,7 +132,10 @@ namespace Calculator
                     retValue = num1 * num2;
                     break;
                 case '/':
-                    retValue = num1 / num2;
+                    if (num2.Numero == "0")
+                        retValue = 0;
+                    else
+                        retValue = num1 / num2;
                     break;
             }
 

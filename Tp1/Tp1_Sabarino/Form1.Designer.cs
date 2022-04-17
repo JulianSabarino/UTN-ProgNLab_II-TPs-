@@ -123,6 +123,7 @@
             this.lst_memory.ItemHeight = 15;
             this.lst_memory.Location = new System.Drawing.Point(586, 32);
             this.lst_memory.Name = "lst_memory";
+            this.lst_memory.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lst_memory.Size = new System.Drawing.Size(190, 379);
             this.lst_memory.TabIndex = 2;
             // 
@@ -157,7 +158,7 @@
             this.txt_firstNumber.Location = new System.Drawing.Point(15, 36);
             this.txt_firstNumber.MinimumSize = new System.Drawing.Size(4, 59);
             this.txt_firstNumber.Name = "txt_firstNumber";
-            this.txt_firstNumber.Size = new System.Drawing.Size(140, 59);
+            this.txt_firstNumber.Size = new System.Drawing.Size(140, 32);
             this.txt_firstNumber.TabIndex = 1;
             // 
             // txt_secNumber
@@ -166,20 +167,22 @@
             this.txt_secNumber.Location = new System.Drawing.Point(353, 36);
             this.txt_secNumber.MinimumSize = new System.Drawing.Size(4, 59);
             this.txt_secNumber.Name = "txt_secNumber";
-            this.txt_secNumber.Size = new System.Drawing.Size(140, 59);
+            this.txt_secNumber.Size = new System.Drawing.Size(140, 32);
             this.txt_secNumber.TabIndex = 0;
             // 
             // lbl_result
             // 
-            this.lbl_result.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_result.AutoSize = true;
             this.lbl_result.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_result.Location = new System.Drawing.Point(528, 27);
+            this.lbl_result.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_result.Location = new System.Drawing.Point(545, 27);
             this.lbl_result.Name = "lbl_result";
-            this.lbl_result.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_result.Size = new System.Drawing.Size(45, 32);
+            this.lbl_result.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_result.Size = new System.Drawing.Size(26, 32);
             this.lbl_result.TabIndex = 2;
-            this.lbl_result.Text = "0.0";
+            this.lbl_result.Text = " .";
+            this.lbl_result.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // frm_tp1
             // 
@@ -191,6 +194,8 @@
             this.Controls.Add(this.lst_memory);
             this.Controls.Add(this.gbox_converter);
             this.Controls.Add(this.gbox_butGroup);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_tp1";
             this.Text = "Tp1 Sabarino";
             this.gbox_butGroup.ResumeLayout(false);

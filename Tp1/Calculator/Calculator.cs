@@ -21,7 +21,17 @@ namespace Calculator
 
         public string BinarioADecimal(string binary)
         {
-            long numberToDecimal = Convert.ToInt32(binary, 2);
+            bool isBinary = EsBinario(binary);
+            long numberToDecimal;
+            if (isBinary)
+                numberToDecimal = Convert.ToInt32(binary, 2);
+            else
+            {
+                numberToDecimal = 0;
+                Numero = "0";
+            }
+                
+
             return numberToDecimal.ToString();
         }
 
@@ -40,7 +50,17 @@ namespace Calculator
 
         private bool EsBinario(string binario)
         {
-            return true;
+            bool isBinary = true;
+            foreach (char c in binario)
+            {
+                if (c != '0' && c != '1')
+                {
+                    isBinary = false;
+                    break;
+                }
+
+            }
+            return isBinary;
         }
 
         public Operando()
@@ -56,6 +76,7 @@ namespace Calculator
         public Operando(string strNumero)
         {
             Numero = strNumero;
+            //numero = ValidarOperando(strNumero);
         }
 
         public static double operator +(Operando n1, Operando n2)
@@ -82,7 +103,7 @@ namespace Calculator
         {
             double retValue;
 
-            if (!(double.TryParse(numero, out retValue)))
+            if (double.TryParse(numero, out retValue) == false)
             {
                 retValue = 0;
             }

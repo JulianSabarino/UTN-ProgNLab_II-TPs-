@@ -1,0 +1,12 @@
+D:\repos\Laboratorio_II\Calculator\bin\Debug\net5.0\Calculator.deps.json
+D:\repos\Laboratorio_II\Calculator\bin\Debug\net5.0\Calculator.dll
+D:\repos\Laboratorio_II\Calculator\bin\Debug\net5.0\Calculator.pdb
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.csproj.AssemblyReference.cache
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfoInputs.cache
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfo.cs
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.csproj.CoreCompileInputs.cache
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.dll
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\refint\Calculator.dll
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\Calculator.pdb
+D:\repos\Laboratorio_II\Calculator\obj\Debug\net5.0\ref\Calculator.dll

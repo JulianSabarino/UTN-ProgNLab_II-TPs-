@@ -1,0 +1,2 @@
+Form1 sin nombre
+Dos clases en 1 archivo. Revisar completo y emprolijar

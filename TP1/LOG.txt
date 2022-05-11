@@ -1,0 +1,6 @@
+-Cambiado el nombrel form de "form1" a "frm_tp1"
+-Cambiado el nombrel form de "frm_tp1" a "frm_calc"
+-Se agrego el on_frm_calc_closing()
+-Se termino de comentar
+-Se agregaron #region Sobrecargas Operador
+-Se separaron en 2 archivos las dos clases (bajo el mismo namespace)

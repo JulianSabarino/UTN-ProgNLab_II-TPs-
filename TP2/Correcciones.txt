@@ -1,0 +1,7 @@
+Emprolijar el repositorio y las entregas, no dejar tanto comentario no útil (lleno de nothing ->?).
+No comentar a la derecha
+operator !=(Vehiculo v1, Vehiculo v2) repite código
+Equals y GetHashCode no forman parte de los diagramas, por ende tampoco del proyecto
+Utilizar polimorfismo para $"TAMAÑO : {this.Tamanio}"
+Sedan no reutiliza los constructores de forma adecuada
+operator +(Taller taller, Vehiculo vehiculo) podría validar primero el espacio, antes de hacer el foreach

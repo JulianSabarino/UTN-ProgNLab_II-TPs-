@@ -9,13 +9,13 @@ namespace Entidades
     /// <summary>
     /// No podrá tener clases heredadas.
     /// </summary>
-    public sealed class Taller //noting -> sealed
+    public sealed class Taller
     {
         List<Vehiculo> vehiculos;
         int espacioDisponible;
         public enum ETipo
         {
-            Ciclomotor, Sedan, SUV, Todos //Moto, Automovil, Camioneta, Todos -> Ciclomotor, Sedan, SUV, Todos
+            Ciclomotor, Sedan, SUV, Todos
         }
 
         #region "Constructores"
@@ -28,7 +28,7 @@ namespace Entidades
         /// pero tengo que tener en cuenta el tama;o dsiponible
         /// </summary>
         /// <param name="espacioDisponible"></param>
-        public Taller(int espacioDisponible) : this() //nothing -> :this() 
+        public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -39,9 +39,9 @@ namespace Entidades
         /// Muestro el estacionamiento y TODOS los vehículos
         /// </summary>
         /// <returns></returns>
-        public override string ToString() //nothing -> override
+        public override string ToString()
         {
-            return this.Listar(this, ETipo.Todos); //Taller.Listar -> this.Listar
+            return this.Listar(this, ETipo.Todos);
         }
         #endregion
 
@@ -64,15 +64,15 @@ namespace Entidades
             {
                 switch (tipo)
                 {
-                    case ETipo.SUV: //Camioneta -> SUV
+                    case ETipo.SUV:
                         if(v is Suv)
                             sb.AppendLine(v.Mostrar());
                         break;
-                    case ETipo.Ciclomotor: //Moto -> Ciclomotor
+                    case ETipo.Ciclomotor: 
                         if (v is Ciclomotor)
                             sb.AppendLine(v.Mostrar());
                         break;
-                    case ETipo.Sedan: //Automovil -> Sedan
+                    case ETipo.Sedan:
                         if (v is Sedan)
                             sb.AppendLine(v.Mostrar());
                         break;
@@ -82,7 +82,7 @@ namespace Entidades
                 }
             }
 
-            return sb.ToString(); //nothing -> toString()
+            return sb.ToString();
         }
         #endregion
 
@@ -95,13 +95,14 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller.vehiculos) //taller -> taller.vehiculos
+            if (taller.vehiculos.Count < taller.espacioDisponible)
             {
-                if (v == vehiculo)
-                    return taller;
-            }
-            if (taller.vehiculos.Count < taller.espacioDisponible) //noting -> if(taller.vehiculos.Count < taller.espacioDisponible)
-            {
+                foreach (Vehiculo v in taller.vehiculos)
+                {
+                    if (v == vehiculo)
+                        return taller;
+                }
+
                 taller.vehiculos.Add(vehiculo);
             }
             return taller;
@@ -114,11 +115,11 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller.vehiculos) //nothing -> taller.vehiculos
+            foreach (Vehiculo v in taller.vehiculos)
             {
                 if (v == vehiculo)
                 {
-                    taller.vehiculos.Remove(vehiculo); // nothin -> taller.vehiculos.Remove(vehiculo);
+                    taller.vehiculos.Remove(vehiculo);
                     break; 
                 }
             }

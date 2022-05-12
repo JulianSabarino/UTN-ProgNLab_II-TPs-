@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Suv: Vehiculo //nothing -> : Vehiculo
+    public class Suv: Vehiculo
     {
-        public Suv(EMarca marca, string chasis, ConsoleColor color): base(marca, chasis, color) // (chasis, marca, color) -> (marca, chasis, color)
+        public Suv(EMarca marca, string chasis, ConsoleColor color): base(marca, chasis, color)
         {
         }
         /// <summary>
         /// SUV son 'Grande'
         /// </summary>
-        protected override ETamanio Tamanio // short -> ETamanio
+        protected override ETamanio Tamanio 
         {
             get
             {
@@ -27,12 +27,12 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SUV");
-            sb.AppendLine(base.Mostrar()); //base -> base.Mostrar()
-            sb.AppendLine($"TAMAÑO : {this.Tamanio}"); //"TAMAÑO : {0}", this.Tamanio -> $"TAMAÑO : {this.Tamanio}"
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine($"TAMAÑO : {this.Tamanio}"); 
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
-            return sb.ToString(); //nothing -> toString()
+            return sb.ToString();
         }
     }
 }

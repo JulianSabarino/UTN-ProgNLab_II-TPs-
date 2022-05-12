@@ -32,3 +32,14 @@ D:\repos\Laboratorio_II\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cac
 D:\repos\Laboratorio_II\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 D:\repos\Laboratorio_II\TP-02\TP-02\obj\Debug\TP-02.exe
 D:\repos\Laboratorio_II\TP-02\TP-02\obj\Debug\TP-02.pdb
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\bin\Debug\TP-02.exe
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\bin\Debug\TP-02.pdb
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\bin\Debug\Entidades.dll
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\bin\Debug\Entidades.pdb
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.SuggestedBindingRedirects.cache
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
+D:\repos\UTN-ProgNLab_II-TPs-\TP2\TP-02\TP-02\obj\Debug\TP-02.pdb

@@ -1,0 +1,17 @@
+-Se sacaron los comentarios de linea estilo //private -> public que indicaban los cambios hechos
+-Se quito el Equeals y GetHashCode, se dejaron comentados para eliminar los warning
+-Se cambio el codigo de operator != por !(v1 == v2) para aprovechar el codigo anterior.
+-Se pregunto antes si hay espacio en el taller en el operator +
+-Se cambio el constructor
+public Sedan(EMarca marca, string chasis, ConsoleColor color):base(...)
+a
+public Sedan(EMarca marca, string chasis, ConsoleColor color): this(...)
+para poder usar el contructor
+public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : base(marca, chasis, color)
+
+
+--operator !=(Vehiculo v1, Vehiculo v2) repite código
+--Utilizar polimorfismo para $"TAMAÑO : {this.Tamanio}"
+
+
+agragar comentarios

@@ -15,7 +15,7 @@ namespace Entidades
         /// <summary>
         /// Ciclomotor son 'Chico'
         /// </summary>
-        protected override ETamanio Tamanio //short -> override ETamanio
+        protected override ETamanio Tamanio
         {
             get
             {
@@ -23,17 +23,17 @@ namespace Entidades
             }
         }
 
-        public override sealed string Mostrar()//private -> public
+        public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("CICLOMOTOR");
-            sb.AppendLine(base.Mostrar());//this -> base
-            sb.AppendLine($"TAMAÑO : {this.Tamanio}");//"TAMAÑO : {0}", this.Tamanio -> $"TAMAÑO : {this.Tamanio}"
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine($"TAMAÑO : {this.Tamanio}");
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
-            return sb.ToString(); //nothing -> ToString()
+            return sb.ToString();
         }
     }
 }

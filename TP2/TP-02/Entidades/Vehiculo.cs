@@ -13,7 +13,7 @@ namespace Entidades
     /// <summary>
     /// La clase Vehiculo no deberá permitir que se instancien elementos de este tipo.
     /// </summary>
-    public abstract class Vehiculo //sealed->abstract
+    public abstract class Vehiculo
     {
         #region Enums, Props and Atributes
         public enum EMarca //nothing -> public
@@ -35,16 +35,16 @@ namespace Entidades
 
         #endregion
 
-        public static explicit operator string(Vehiculo p) //private -> public
+        public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine($"CHASIS: {p.chasis}\r\n");
-            sb.AppendLine($"MARCA : {p.marca.ToString()}\r\n"); //"MARCA : {0}\r\n", p.marca.ToString() -> $"MARCA : {p.marca.ToString()}\r\n"
+            sb.AppendLine($"MARCA : {p.marca.ToString()}\r\n");
             sb.AppendLine($"COLOR : {p.color.ToString()}\r\n");
             sb.AppendLine("---------------------");
 
-            return sb.ToString(); //nothing -> toString()
+            return sb.ToString(); 
         }
 
         /// <summary>
@@ -52,9 +52,9 @@ namespace Entidades
         /// </summary>
         /// <returns></returns> 
 
-        public virtual string Mostrar() // sealed -> public virtual
+        public virtual string Mostrar() 
         {
-            return (String)this; // this -> (String)this
+            return (String)this; 
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
-            return (v1.chasis != v2.chasis); // == -> !=
+            return !(v1 == v2);
         }
 
         /// <summary>
@@ -91,6 +91,8 @@ namespace Entidades
         }
         #endregion
 
+
+        /*
         ///<summary>
         /// Eliminamos los warning
         /// </summary>
@@ -105,6 +107,6 @@ namespace Entidades
         {
             return this.chasis.GetHashCode();
         }
-
+        */
     }
 }

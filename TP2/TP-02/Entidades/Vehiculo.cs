@@ -16,11 +16,11 @@ namespace Entidades
     public abstract class Vehiculo
     {
         #region Enums, Props and Atributes
-        public enum EMarca //nothing -> public
+        public enum EMarca 
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
         }
-        protected enum ETamanio //nothing -> protected
+        protected enum ETamanio 
         {
             Chico, Mediano, Grande
         }
@@ -31,7 +31,7 @@ namespace Entidades
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-        protected abstract ETamanio Tamanio { get; } //nothing -> protected / set -> nothing
+        protected abstract ETamanio Tamanio { get; } 
 
         #endregion
 
@@ -43,7 +43,7 @@ namespace Entidades
             sb.AppendLine($"MARCA : {p.marca.ToString()}\r\n");
             sb.AppendLine($"COLOR : {p.color.ToString()}\r\n");
             sb.AppendLine("---------------------");
-
+            sb.AppendLine($"TAMAÑO : {Tamanio.ToString()}");
             return sb.ToString(); 
         }
 

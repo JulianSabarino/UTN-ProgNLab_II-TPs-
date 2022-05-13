@@ -8,10 +8,5 @@ a
 public Sedan(EMarca marca, string chasis, ConsoleColor color): this(...)
 para poder usar el contructor
 public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : base(marca, chasis, color)
-
-
---operator !=(Vehiculo v1, Vehiculo v2) repite código
---Utilizar polimorfismo para $"TAMAÑO : {this.Tamanio}"
-
-
-agragar comentarios
+-Se arreglo el operator != para que reutilice codigo
+-Se arreglo el polimorfismo de $"TAMAÑO : {this.Tamanio}"
